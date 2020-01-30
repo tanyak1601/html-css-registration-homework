@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('assets/fonts/ProximaNovaRegular.woff') format('woff');
+    src: url('./assets/fonts/ProximaNovaRegular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -21,7 +21,7 @@ body {
     justify-content: center;
     align-items: center;
     height:100vh;
-    background-image: url("assets/images/Layer.png");
+    background-image: url("./assets/images/Layer.png");
     background-size: cover;
 }
 
