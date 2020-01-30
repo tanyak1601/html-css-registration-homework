@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('./assets/fonts/ProximaNovaRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Proxima Nova', sans-serif;
+    color: #ffffff;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-image: url("./assets/images/Layer.png");
+    background-size: cover;
+}
+
+.wrapper {
+    padding: 40px;
+    width: 430px;
+    height: 550px;
+    background-color: rgba(29, 29, 29, 0.8);
+}
+
+.title-input {
+    display: none;
+}
+
+.title-label {
+    margin-right: 40px;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+}
+
+.title-input:checked + .title-label {
+    border-bottom: 3px solid #ffab1a;
+}
+
+.form {
+    display: none;
+    width: 100%;
+}
+
+.fild__input {
+    padding: 60px 0 0 5px;
+    width: 100%;
+    font-size: 1.8rem;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fbfbfb;
+}
+
+.fild__input:active,
+.fild__input:focus {
+    outline: none;
+}
+
+.fild__input::placeholder,
+.fild__input::-ms-input-placeholder {
+    padding-left: 5px;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+.form__checkbox {
+    padding-top: 40px;
+}
+
+
+.form__checkbox_input {
+    display: none;
+}
+
+.form__checkbox_input + label:before {
+    content: "\2713";
+    color: transparent;
+    display: inline-block;
+    font-size: 2rem;    
+    margin-right: 5px;
+    height: 1.8rem;
+    width: 1.8rem;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+}
+
+.form__checkbox_input:checked + label:before {
+    color: white;
+    background-color: #215aa7;
+    border: 1px solid  #215aa7;
+}
+
+.form__checkbox_label {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+
+.form__submit {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.form__submit_button {
+    width: 196px;
+    height: 40px;
+    font-size: 2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #f57f17;
+    border: none;
+    border-radius: 20px;
+}
+
+
+.form__submit_button:focus,
+.form__submit_button:active {
+    outline: none;
+}
+
+.form__forgot-password {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.form__forgot-password_link {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.title-input_signUp:checked ~ .form__signUp,
+.title-input_signIn:checked ~ .form__signIn {
+    display: block;
+}
+
+
+
