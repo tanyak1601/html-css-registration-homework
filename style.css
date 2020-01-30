@@ -29,7 +29,7 @@ body {
     padding: 40px;
     width: 430px;
     height: 550px;
-    background-color: #1d1d1dbb;
+    background-color: rgba(29, 29, 29, 0.8);
 }
 
 .title-input {
@@ -66,7 +66,8 @@ body {
     outline: none;
 }
 
-.fild__input::placeholder {
+.fild__input::placeholder,
+.fild__input::-ms-input-placeholder {
     padding-left: 5px;
     font-size: 1.8rem;
     color: #ffffff;
